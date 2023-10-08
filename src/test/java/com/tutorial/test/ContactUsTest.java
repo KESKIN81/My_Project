@@ -22,7 +22,6 @@ public class ContactUsTest extends BaseTest {
         Thread.sleep(2000);
         contactUs.click();
 
-
         WebElement yourName = driver.findElement(By.id("input-name"));
         WebElement emailAddress = driver.findElement(By.id("input-email"));
         WebElement enquiry = driver.findElement(By.id("input-enquiry"));
@@ -54,8 +53,6 @@ public class ContactUsTest extends BaseTest {
         WebElement contactUs = driver.findElement(By.linkText("Contact Us"));
         Thread.sleep(2000);
         contactUs.click();
-
-
         WebElement yourName = driver.findElement(By.id("input-name"));
         WebElement emailAddress = driver.findElement(By.id("input-email"));
         yourName.sendKeys("Mucahid Keskin");
@@ -81,13 +78,10 @@ public class ContactUsTest extends BaseTest {
         WebElement contactUs = driver.findElement(By.linkText("Contact Us"));
         Thread.sleep(2000);
         contactUs.click();
-
-
         WebElement yourName = driver.findElement(By.id("input-name"));
         WebElement emailAddress = driver.findElement(By.id("input-email"));
         WebElement enquiry = driver.findElement(By.id("input-enquiry"));
         WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary']"));
-
         yourName.sendKeys("Mucahid Keskin");
         emailAddress.sendKeys("mucahidkeskin81@gmail.com");
         enquiry.sendKeys("Thank you");
