@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PracticeTest extends BaseTest {
+public class ContactUsTest extends BaseTest {
 
     @Test
 
@@ -39,8 +39,6 @@ public class PracticeTest extends BaseTest {
         Thread.sleep(2000);
         continueButton.click();
 
-
-
     }
 
     @Test
@@ -61,9 +59,6 @@ public class PracticeTest extends BaseTest {
         WebElement yourName = driver.findElement(By.id("input-name"));
         WebElement emailAddress = driver.findElement(By.id("input-email"));
         yourName.sendKeys("Mucahid Keskin");
-        emailAddress.sendKeys("mucahidkeskin81@gmail.com");
-        Thread.sleep(2000);
-        emailAddress.clear();
         emailAddress.sendKeys("mucahidkeskin81gmail.com");
         Thread.sleep(2000);
         WebElement submitButton = driver.findElement(By.xpath("//input[@class='btn btn-primary']"));
@@ -95,9 +90,6 @@ public class PracticeTest extends BaseTest {
 
         yourName.sendKeys("Mucahid Keskin");
         emailAddress.sendKeys("mucahidkeskin81@gmail.com");
-        enquiry.sendKeys("Urunlerinizle ilgileniyorum benimle baglantiya gecermisiniz");
-        Thread.sleep(2000);
-        enquiry.clear();
         enquiry.sendKeys("Thank you");
         Thread.sleep(2000);
         submitButton.click();
